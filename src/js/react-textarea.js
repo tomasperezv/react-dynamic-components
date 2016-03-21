@@ -1,6 +1,8 @@
 /**
  * @component ReactTextarea
  */
+import React from 'react';
+
 var ReactTextarea = React.createClass({
   /**
    * @type {Object} propTypes
