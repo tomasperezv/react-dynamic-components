@@ -1,13 +1,44 @@
+/**
+ * @component ReactTextarea
+ */
 var ReactTextarea = React.createClass({
+  /**
+   * @type {Object} propTypes
+   */
   propTypes: {
-    defaultText: React.PropTypes.string
+    text: React.PropTypes.string
   },
+
+  /**
+   * @method getInitialState
+   */
+  getInitialState: function() {
+    return {
+      text: this.props.text
+    }
+  },
+
+  /**
+   * @method render
+   */
   render: function() {
     return React.DOM.div(null,
       React.DOM.textarea({
-        defaultValue: this.props.defaultText
+        defaultValue: this.state.text,
+        onChange: this._textChange
       }),
-      React.DOM.h3(null, this.props.defaultText.length)
+      React.DOM.h3(null, this.state.text.length)
     );
+  },
+
+  /**
+   * @method _textChange
+   * @param {Event} ev
+   * @private
+   */
+  _textChange: function(ev) {
+    this.setState({
+      text: ev.target.value
+    });
   }
 });

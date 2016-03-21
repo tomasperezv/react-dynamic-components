@@ -10,7 +10,9 @@
     <div id="react-textarea"></div>
     <script type="text/javascript">
       var element = document.getElementById('react-textarea');
-      ReactDOM.render(React.createElement(ReactTextarea, {defaultText: 'Textarea component'}), element);
+      ReactDOM.render(React.createElement(ReactTextarea, {
+        text: 'Textarea component'
+      }), element);
     </script>
   </body>
 </html>
