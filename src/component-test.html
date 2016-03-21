@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="./js/vendor/react-0.14.7.min.js"></script>
+    <script src="./js/vendor/react-dom-0.14.7.min.js"></script>
+    <script src="./js/react-textarea.js"></script>
+  </head>
+  <body>
+    <div id="react-textarea"></div>
+    <script type="text/javascript">
+      var element = document.getElementById('react-textarea');
+      ReactDOM.render(React.createElement(ReactTextarea, {defaultText: 'Textarea component'}), element);
+    </script>
+  </body>
+</html>
