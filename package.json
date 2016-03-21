@@ -1,0 +1,22 @@
+{
+  "name": "react-textarea",
+  "version": "0.0.9",
+  "description": "React Textarea component",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomasperezv/react-textarea.git"
+  },
+  "keywords": [
+    "react",
+    "jest"
+  ],
+  "author": "Tomas Perez <t@0x101.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomasperezv/react-textarea/issues"
+  },
+  "homepage": "https://github.com/tomasperezv/react-textarea#readme"
+}
