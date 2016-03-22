@@ -16,7 +16,7 @@ var ReactTextarea = React.createClass({
    */
   getInitialState: function() {
     return {
-      text: this.props.text
+      text: this.props.text || ''
     }
   },
 
@@ -44,3 +44,5 @@ var ReactTextarea = React.createClass({
     });
   }
 });
+
+module.exports = ReactTextarea;
