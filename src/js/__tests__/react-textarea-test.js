@@ -8,24 +8,30 @@ import ReactTextarea from '../react-textarea.js';
 describe('ReactTextaarea initialization', () => {
 
   var textarea = null;
-  beforeEach(() => {
+  var elements = {
+    textarea: null,
+    lengthFeedback: null
+  };
 
+  beforeEach(() => {
     textarea = TestUtils.renderIntoDocument(
       <ReactTextarea />
     );
 
+    elements.textarea = ReactDOM.findDOMNode(textarea).children[0];
+    elements.lengthFeedback = ReactDOM.findDOMNode(textarea).children[1];
   });
 
   it('Textarea initialization: default text', () => {
-    const node = ReactDOM.findDOMNode(textarea).children[0];
-    expect(node.textContent).toBe('');
+    expect(elements.textarea.textContent).toBe('');
   });
 
   it('Textarea initialization: text length indicator', () => {
+    expect(elements.lengthFeedback.textContent).toBe('0');
+
     var text = 'New text';
-    const element = ReactDOM.findDOMNode(textarea).children[0];
-    TestUtils.Simulate.change(element, { target: { value: text } });
-    expect(element.textContent).toBe(text);
+    TestUtils.Simulate.change(elements.textarea, { target: { value: text } });
+    expect(elements.lengthFeedback.textContent).toBe('' + text.length);
   });
 
 });
