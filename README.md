@@ -2,6 +2,12 @@
 
 A set of rich web components built using React.
 
+## Build
+
+`babel-cli` is required
+
+`npm install -g babel-cli`
+
 ## Tests
 
 ```
