@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import TestUtils from 'react-addons-test-utils';
 
-jest.unmock('../react-textarea.js');
-import ReactTextarea from '../react-textarea.js';
+jest.unmock('../textarea.js');
+import Textarea from '../textarea.js';
 
 describe('ReactTextaarea initialization', () => {
 
@@ -15,7 +15,7 @@ describe('ReactTextaarea initialization', () => {
 
   beforeEach(() => {
     textarea = TestUtils.renderIntoDocument(
-      <ReactTextarea />
+      <Textarea />
     );
 
     elements.textarea = ReactDOM.findDOMNode(textarea).children[0];

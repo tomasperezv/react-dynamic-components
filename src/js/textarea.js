@@ -3,7 +3,7 @@
  */
 import React from 'react';
 
-var ReactTextarea = React.createClass({
+var Textarea = React.createClass({
   /**
    * @type {Object} propTypes
    */
@@ -45,4 +45,4 @@ var ReactTextarea = React.createClass({
   }
 });
 
-module.exports = ReactTextarea;
+module.exports = Textarea;
