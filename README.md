@@ -1,5 +1,6 @@
-# react-textarea
-A textarea react component
+# React Dynamic Components
+
+A set of rich web components built using React.
 
 ## Tests
 
