@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <script src="./js/vendor/react-0.14.7.min.js"></script>
     <script src="./js/vendor/react-dom-0.14.7.min.js"></script>
-    <script src="./js/react-textarea.js"></script>
+    <script src="../lib/js/react-components.js"></script>
   </head>
   <body>
-    <div id="react-textarea"></div>
+    <div id="textarea"></div>
     <script type="text/javascript">
-      var element = document.getElementById('react-textarea');
-      ReactDOM.render(React.createElement(ReactTextarea, {
+      var element = document.getElementById('textarea');
+      ReactDOM.render(React.createElement(Textarea, {
         text: 'Textarea component'
       }), element);
     </script>
