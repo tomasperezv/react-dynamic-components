@@ -1,7 +1,7 @@
 {
   "name": "react-textarea",
   "version": "0.0.9",
-  "description": "React Textarea component",
+  "description": "React Dynamic Components",
   "scripts": {
     "test": "jest"
   },
