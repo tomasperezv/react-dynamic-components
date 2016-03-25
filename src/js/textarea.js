@@ -2,8 +2,18 @@
  * @component ReactTextarea
  */
 import React from 'react';
+import LogMixin from './mixins/log.js';
+
+// Initialize the methods that will be exposed by the mixin
+LogMixin.initialize();
 
 var Textarea = React.createClass({
+
+  /**
+   * @type {Array} mixins
+   */
+  mixins: [LogMixin],
+
   /**
    * @type {Object} propTypes
    */
