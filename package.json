@@ -1,5 +1,5 @@
 {
-  "name": "react-textarea",
+  "name": "react-dynamic-components",
   "version": "0.0.9",
   "description": "React Dynamic Components",
   "scripts": {
@@ -26,7 +26,7 @@
   ],
   "author": "Tomas Perez <t@0x101.com>",
   "license": "MIT",
-  "homepage": "https://github.com/tomasperezv/react-textarea#readme",
+  "homepage": "https://github.com/tomasperezv/react-dynamic-components#readme",
   "devDependencies": {
     "babel-jest": "^9.0.3",
     "babel-preset-es2015": "*",
