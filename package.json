@@ -4,7 +4,7 @@
   "description": "React Dynamic Components",
   "scripts": {
     "test": "jest",
-    "build": "babel src -d lib --ignore src/js/vendor,src/js/__tests__ && browserify --standalone Textarea lib/js/*.js > lib/js/react-components.js"
+    "build": "babel src -d dist --ignore src/js/vendor,src/js/__tests__ && browserify --standalone Textarea dist/js/*.js > dist/js/react-components.js"
   },
   "jest": {
     "scriptPreprocessor": "node_modules/babel-jest",
